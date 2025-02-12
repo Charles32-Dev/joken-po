@@ -47,4 +47,8 @@ const PlayerTheGame = (human, machine) => {
     }
 }
 
+function Reload() {
+    window.location.reload();
+}
+
 
