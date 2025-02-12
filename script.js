@@ -10,9 +10,14 @@ const PlayerHuman = (Humanchoice) => {
     PlayerTheGame(Humanchoice, PlayerMachine())
 }
 
+const OPTIONS_GAME = {
+    ROCK: 'rock',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
+}
 
 const PlayerMachine = () => {
-    const Choice = ['rock', 'paper', 'scissors']
+    const Choice = [OPTIONS_GAME.ROCK, OPTIONS_GAME.PAPER, OPTIONS_GAME.SCISSORS]
 
     const NumberRandon = Math.floor(Math.random() * 3)
 
@@ -29,9 +34,9 @@ const PlayerTheGame = (human, machine) => {
     }
 
     else if (
-        (human === 'paper' && machine === 'rock') ||
-        (human === 'rock' && machine === 'scissors') ||
-        (human === 'scissors' && machine === 'paper')
+        (human === OPTIONS_GAME.PAPER && machine === OPTIONS_GAME.ROCK) ||
+        (human === OPTIONS_GAME.ROCK && machine === OPTIONS_GAME.SCISSORS) ||
+        (human === OPTIONS_GAME.SCISSORS && machine === OPTIONS_GAME.PAPER)
     ) {
         ScoreHuman++
         HumanScore.innerHTML = ScoreHuman
