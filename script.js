@@ -25,7 +25,7 @@ const PlayerTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = "Empatou!"
-        result.style.color = "#BC3E3E"
+        result.style.color = "#fe0909"
     }
 
     else if (
@@ -42,7 +42,7 @@ const PlayerTheGame = (human, machine) => {
     } else {
         ScoreMachine++
         MachineScore.innerHTML = ScoreMachine
-        result.style.color = "#BC3E3E"
+        result.style.color = "#fe0909"
         result.innerHTML = "Você perdeu para a Alexa"
     }
 }

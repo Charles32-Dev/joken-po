@@ -7,10 +7,11 @@
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #2e2d2d;
     color: #fff;
     display: flex;
+    flex-direction: column;
     background-image: url("assets/Sosh.gif");
 
 }
@@ -19,33 +20,25 @@ main {
     background-color: rgb(0, 0, 0);
     background-image: url('assets/alexa-container.png');
     height: 450px;
-    width: 620px;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto auto;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
-.button {
-    margin: 40px;
-}
-
-.button #scissors {
-    width: 77px;
-}
-
-.button button {
+.button img {
     font-size: 60px;
-    background-color: rgb(0, 0, 0);
     border-radius: 8px;
     cursor: pointer;
     border: none;
     transition: opacity 0.3s ease-in-out;
+    margin: 10px;
 }
 
-.button button:hover {
+.button img:hover {
     opacity: 0.7;
 }
 
@@ -59,6 +52,8 @@ main {
 
 .container p {
     margin: 8px 0;
+    font-size: 30px;
+    color: #fffdd9;
     font-weight: bold;
 }
 
@@ -80,4 +75,35 @@ main {
 
 .reload-container:hover {
     opacity: 0.8;
+}
+
+footer {
+    position: relative;
+    background-color: #2a2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    opacity: 0.8;
+}
+
+footer span {
+    color: aqua;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        background-color: #ffffff;
+
+    }
+
 }
